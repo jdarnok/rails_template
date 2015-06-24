@@ -13,7 +13,7 @@ if yes?("create .ruby-gemset and .ruby file with #{@app_name} root path? \n >")
   CODE
 end
 if yes?("add devise gem?(yes/no) \n >")
-  uri = URI.parse('https://api.github.com/repos/jdarnok/Gastronautor/contents/config/initializers/devise.rb')
+  uri = URI.parse('https://api.github.com/repos/jdarnok/rails_template/contents/devise.rb')
   req = Net::HTTP.new(uri.host, uri.port)
   req.use_ssl = true
   req.verify_mode = OpenSSL::SSL::VERIFY_NONE
